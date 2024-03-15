@@ -11,9 +11,9 @@ with open('songs.csv', encoding="utf8") as csvfile:
 count = 1
 for el in reader:
     if '10' in el['date']:
-        date = str(el["date"].split('.'))[2:-2]
-        track_name = str(el["track_name"].split('.'))[1:-1]
-        artist_name = str(el["artist_name"].split('.'))[1:-1]
+        date = str(el["date"])
+        track_name = str(el["track_name"].split('.'))[2:-2]
+        artist_name = str(el["artist_name"].split('.'))[2:-2]
         print(f'{j} {track_name}, {artist_name}, {date}')
         count += 1
     if count == 4:
