@@ -12,4 +12,4 @@ while artist_name != '0':
             break
     else:
         print('Ничего не найдено')
-    id_project = input()
+    artist_name = input()
